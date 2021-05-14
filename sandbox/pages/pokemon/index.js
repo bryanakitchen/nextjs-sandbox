@@ -6,12 +6,12 @@ export async function getStaticProps() {
 
     return {
         props: { pokemon },
+        // revalidate: 5
+        // revalidate allows you to re-generate page per seconds
     }
 }
 
-
 export default function PokemonDoesThisHaveToMatch({ pokemon }) {
-    // console.log(pokemon.results[0]);
 
     return (
         <>
